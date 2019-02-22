@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <EditText
+        android:id="@+id/call"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="183dp"
+        android:hint="Enter the number to be dialed"
+        android:textAlignment="center"
+        android:inputType="phone"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:width="480dp"
+        android:height="240dp"
+        android:text="I am sharing this text using my own build app!!!!!"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/share_content"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/ic_share_black_24dp"
+
+        />
+
+    <Button
+
+        android:id="@+id/dial"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/share_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="104dp"
+        android:layout_toRightOf="@+id/share_content"
+        android:background="@drawable/ic_dialer_sip_black_24dp" />
+
+    <Button
+
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/share_content"
+        android:id="@+id/camera"
+
+        android:layout_marginLeft="88dp"
+        android:layout_toRightOf="@+id/dial"
+        android:background="@drawable/ic_camera_black_24dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:id="@+id/img"
+        />
+</RelativeLayout>
