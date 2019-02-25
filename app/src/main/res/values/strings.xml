@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">CamerA</string>
+    <string name="title_activity_alert_dialog">AlertDialog</string>
 </resources>
